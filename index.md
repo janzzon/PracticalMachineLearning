@@ -99,37 +99,37 @@ prediction <- predict(modFitPca, testing)
 ## 
 ##           Reference
 ## Prediction    A    B    C    D    E
-##          A 1393    2    0    1    0
-##          B    0  936    4    0    2
-##          C    1   11  846   10    1
-##          D    1    0    4  793    1
-##          E    0    0    1    0  897
+##          A 1383   14    1    0    0
+##          B    7  920   19    0    4
+##          C    5   14  822   24    9
+##          D    0    0   12  779    4
+##          E    0    1    1    1  884
 ## 
 ## Overall Statistics
 ##                                           
-##                Accuracy : 0.992           
-##                  95% CI : (0.9891, 0.9943)
+##                Accuracy : 0.9763          
+##                  95% CI : (0.9717, 0.9804)
 ##     No Information Rate : 0.2845          
 ##     P-Value [Acc > NIR] : < 2.2e-16       
 ##                                           
-##                   Kappa : 0.9899          
+##                   Kappa : 0.9701          
 ##  Mcnemar's Test P-Value : NA              
 ## 
 ## Statistics by Class:
 ## 
 ##                      Class: A Class: B Class: C Class: D Class: E
-## Sensitivity            0.9986   0.9863   0.9895   0.9863   0.9956
-## Specificity            0.9991   0.9985   0.9943   0.9985   0.9998
-## Pos Pred Value         0.9979   0.9936   0.9735   0.9925   0.9989
-## Neg Pred Value         0.9994   0.9967   0.9978   0.9973   0.9990
+## Sensitivity            0.9914   0.9694   0.9614   0.9689   0.9811
+## Specificity            0.9957   0.9924   0.9872   0.9961   0.9993
+## Pos Pred Value         0.9893   0.9684   0.9405   0.9799   0.9966
+## Neg Pred Value         0.9966   0.9927   0.9918   0.9939   0.9958
 ## Prevalence             0.2845   0.1935   0.1743   0.1639   0.1837
-## Detection Rate         0.2841   0.1909   0.1725   0.1617   0.1829
-## Detection Prevalence   0.2847   0.1921   0.1772   0.1629   0.1831
-## Balanced Accuracy      0.9989   0.9924   0.9919   0.9924   0.9977
+## Detection Rate         0.2820   0.1876   0.1676   0.1588   0.1803
+## Detection Prevalence   0.2851   0.1937   0.1782   0.1621   0.1809
+## Balanced Accuracy      0.9936   0.9809   0.9743   0.9825   0.9902
 ```
-The accuracy of the model is 99.2%.  
-95 percent conficence interval of accuracy is 98.91% to 
-99.43%.  
+The accuracy of the model is 97.63%.  
+95 percent conficence interval of accuracy is 97.17% to 
+98.04%.  
 
 ###Test cases
 The submission files for the project is created with this code provided from Coursera.
