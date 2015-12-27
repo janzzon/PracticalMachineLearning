@@ -3,8 +3,8 @@ Stefan
 `r format(Sys.time(), '%Y-%m-%d')`  
 
 ###Background
-The task of this writeup is to predict the manner of how weight lifting exercises is performed in the data described in [this study]( http://groupware.les.inf.puc-rio.br/har)  
 This is the writeup for the Coursera course Practical Machine Learning.
+The task of this writeup is to predict the manner of how weight lifting exercises is performed in the data described in [this study]( http://groupware.les.inf.puc-rio.br/har)  
 
 ###Loading the data
 
@@ -84,22 +84,6 @@ if (file.exists("modFitPca.RDS")) {
 }
 ```
 
-```
-## Loading required package: randomForest
-## randomForest 4.6-12
-## Type rfNews() to see new features/changes/bug fixes.
-## 
-## Attaching package: 'randomForest'
-## 
-## The following object is masked from 'package:ggplot2':
-## 
-##     margin
-## 
-## The following object is masked from 'package:dplyr':
-## 
-##     combine
-```
-
 ###Validation and error rate
 
 ```r
@@ -115,37 +99,37 @@ prediction <- predict(modFitPca, testing)
 ## 
 ##           Reference
 ## Prediction    A    B    C    D    E
-##          A 1385   10    1    1    0
-##          B    2  917   19    0    6
-##          C    6   20  823   32    7
-##          D    2    0   11  769    2
-##          E    0    2    1    2  886
+##          A 1393    2    0    1    0
+##          B    0  936    4    0    2
+##          C    1   11  846   10    1
+##          D    1    0    4  793    1
+##          E    0    0    1    0  897
 ## 
 ## Overall Statistics
 ##                                           
-##                Accuracy : 0.9747          
-##                  95% CI : (0.9699, 0.9789)
+##                Accuracy : 0.992           
+##                  95% CI : (0.9891, 0.9943)
 ##     No Information Rate : 0.2845          
 ##     P-Value [Acc > NIR] : < 2.2e-16       
 ##                                           
-##                   Kappa : 0.968           
+##                   Kappa : 0.9899          
 ##  Mcnemar's Test P-Value : NA              
 ## 
 ## Statistics by Class:
 ## 
 ##                      Class: A Class: B Class: C Class: D Class: E
-## Sensitivity            0.9928   0.9663   0.9626   0.9565   0.9834
-## Specificity            0.9966   0.9932   0.9839   0.9963   0.9988
-## Pos Pred Value         0.9914   0.9714   0.9268   0.9809   0.9944
-## Neg Pred Value         0.9971   0.9919   0.9920   0.9915   0.9963
+## Sensitivity            0.9986   0.9863   0.9895   0.9863   0.9956
+## Specificity            0.9991   0.9985   0.9943   0.9985   0.9998
+## Pos Pred Value         0.9979   0.9936   0.9735   0.9925   0.9989
+## Neg Pred Value         0.9994   0.9967   0.9978   0.9973   0.9990
 ## Prevalence             0.2845   0.1935   0.1743   0.1639   0.1837
-## Detection Rate         0.2824   0.1870   0.1678   0.1568   0.1807
-## Detection Prevalence   0.2849   0.1925   0.1811   0.1599   0.1817
-## Balanced Accuracy      0.9947   0.9797   0.9733   0.9764   0.9911
+## Detection Rate         0.2841   0.1909   0.1725   0.1617   0.1829
+## Detection Prevalence   0.2847   0.1921   0.1772   0.1629   0.1831
+## Balanced Accuracy      0.9989   0.9924   0.9919   0.9924   0.9977
 ```
-The accuracy of the model is 97.47%.  
-95 percent conficence interval of accuracy is 96.99% to 
-97.89%.  
+The accuracy of the model is 99.2%.  
+95 percent conficence interval of accuracy is 98.91% to 
+99.43%.  
 
 ###Test cases
 The submission files for the project is created with this code provided from Coursera.

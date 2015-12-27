@@ -9,8 +9,8 @@ output:
 ---
 
 ###Background
-The task of this writeup is to predict the manner of how weight lifting exercises is performed in the data described in [this study]( http://groupware.les.inf.puc-rio.br/har)  
 This is the writeup for the Coursera course Practical Machine Learning.
+The task of this writeup is to predict the manner of how weight lifting exercises is performed in the data described in [this study]( http://groupware.les.inf.puc-rio.br/har)  
 
 ###Loading the data
 
@@ -62,7 +62,7 @@ The prediction model is Random Forest, pre processing is performed with principa
 Random Forest is slow but tend to deliver good results with various data. This was the first model I tried, and it seems to be good enough.  
 To speed up model training a bit, the training is utilizing multiple cores if available.  
 The model is also saved as a .RDS-file. If there's an existing model file, that's used instead of recompute the model.  
-```{r Create model}
+```{r Create model, message=FALSE}
 # Check if saved model file exists. Read if extists, train model and save .RDS file if missing.
 if (file.exists("modFitPca.RDS")) {
   # Read model from file
