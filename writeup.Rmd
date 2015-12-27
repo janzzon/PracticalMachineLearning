@@ -3,9 +3,8 @@ title: "Prediction Assignment Writeup"
 author: "Stefan"
 date: "`r format(Sys.time(), '%Y-%m-%d')`"
 output: 
-  html_document:
-    keep_md: true
- 
+  html_document: 
+    keep_md: yes
 ---
 
 ###Background
