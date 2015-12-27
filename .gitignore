@@ -1,0 +1,7 @@
+.Rproj.user
+.Rhistory
+.RData
+PracticalMachineLearningSubmit.Rproj
+data
+problem_id_*.txt
+modFitPca.RDS
